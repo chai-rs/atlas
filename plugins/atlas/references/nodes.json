@@ -1,0 +1,25 @@
+{
+	"common": ["type", "title", "description", "status", "generated"],
+	"status": ["draft", "stable", "deprecated"],
+	"realization": ["planned", "built"],
+	"types": {
+		"atlas-config": { "path": "atlas.md", "entry": true, "keys": ["okf_version", "system", "language", "html"] },
+		"vision": { "path": "business/vision.md", "entry": true },
+		"glossary": { "path": "business/glossary.md", "entry": true },
+		"context-map": { "path": "business/context-map.md", "entry": true },
+		"capability": { "path": "business/capabilities/*.md" },
+		"journey": { "path": "business/journeys/*.md", "realization": true, "diagram": "sequenceDiagram" },
+		"system-context": { "path": "c4/context.md", "entry": true, "realization": true, "diagram": "flowchart" },
+		"container-view": { "path": "c4/containers.md", "entry": true, "realization": true, "diagram": "flowchart" },
+		"container": { "path": "c4/containers/*/container.md", "realization": true, "keys": ["kind"] },
+		"component-view": { "entry": true, "path": "c4/containers/*/components.md", "realization": true, "fromCode": true },
+		"structure": { "entry": true, "path": "c4/containers/*/code/structure.md", "realization": true, "fromCode": true },
+		"domain-model": { "entry": true, "path": "c4/containers/*/code/domain.md", "realization": true, "fromCode": true, "diagram": "classDiagram" },
+		"data-model": { "entry": true, "path": "c4/containers/*/code/data.md", "realization": true, "fromCode": true, "diagram": "erDiagram" },
+		"outbound-calls": { "entry": true, "path": "c4/containers/*/code/calls-out.md", "realization": true, "fromCode": true },
+		"inbound-calls": { "entry": true, "path": "c4/containers/*/code/calls-in.md", "realization": true },
+		"operation": { "path": "c4/containers/*/code/api/*.md", "realization": true, "fromCode": true },
+		"decision": { "path": "decisions/*.md", "entry": true },
+		"repository": { "path": "repos/*.md", "keys": ["url", "default_branch"] }
+	}
+}

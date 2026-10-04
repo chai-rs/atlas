@@ -1,0 +1,18 @@
+{
+	"name": "atlas",
+	"version": "0.1.0",
+	"description": "Keeps the business context and the C4 model of a system in a .workspace OKF bundle, and runs development work against it through pstack, Matt Pocock's skills, and ponytail-review.",
+	"keywords": [
+		"c4",
+		"okf",
+		"architecture",
+		"workspace",
+		"skills"
+	],
+	"author": {
+		"name": "chai-rs",
+		"url": "https://github.com/chai-rs"
+	},
+	"homepage": "https://github.com/chai-rs/atlas",
+	"repository": "https://github.com/chai-rs/atlas"
+}

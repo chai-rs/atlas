@@ -1,0 +1,16 @@
+{
+	"name": "atlas",
+	"owner": {
+		"name": "chai-rs",
+		"url": "https://github.com/chai-rs"
+	},
+	"description": "Atlas keeps the business context and the C4 model of a system in a .workspace OKF bundle.",
+	"plugins": [
+		{
+			"name": "atlas",
+			"source": "./plugins/atlas",
+			"description": "Keeps the business context and the C4 model of a system in a .workspace OKF bundle, and runs development work against it.",
+			"version": "0.1.0"
+		}
+	]
+}
